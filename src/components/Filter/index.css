@@ -1,7 +1,6 @@
 .filter {
-  display: inline;
-}
-
-.nesto {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f18867;
 }

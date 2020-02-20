@@ -1,59 +1,27 @@
-import * as React from "react";
+import React from "react";
+import "./index.css";
 
-import styles from "./index.css";
+function Filter() {
+  return (
+    <div class="filter">
+      <p class="filter-item1">Refine your results!</p>
+      <br />
+      <label class="filter-item"> Filter</label>
+      <br />
+      <input
+        type="text"
+        placeholder="Filter through cars"
+        class="filter-item"
+      />
 
-class Filter extends React.Component {
-  render() {
-    return (
-      <div>
-        <form class="filter">
-          <p>Refine your results</p>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <label>Price from</label>
-                </div>
-                <div>
-                  <input
-                    min="0"
-                    max="10000000"
-                    type="number"
-                    id="price-from"
-                    placeholder="£1,000,000"
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <label>Postcode</label>
-                </div>
-                <div>
-                  <select>
-                    <option className="nesto">Choose...</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <label>Sort Order</label>
-                </div>
-                <div>
-                  <select>
-                    <option value="">Choose...</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    );
-  }
+      <label class="filter-item">Sort order</label>
+      <select>
+        <option class="filter-item">Choose...</option>
+        <option class="filter-item">Alfa Romeo</option>
+        <option class="filter-item">BMW</option>
+      </select>
+    </div>
+  );
 }
 
 export default Filter;

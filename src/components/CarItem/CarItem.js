@@ -1,8 +1,9 @@
 import React from "react";
+import "./index.css";
 
 function CarItem(props) {
   return (
-    <div>
+    <div className="make">
       <h1>{props.item.make}</h1>
       <p>{props.item.model}</p>
     </div>

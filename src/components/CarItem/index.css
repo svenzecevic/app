@@ -1,15 +1,8 @@
-.carItems {
+.make {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 3px;
   border: 2px black solid;
-  background-color: rgb(44, 44, 48);
-  color: white;
-}
-
-.carItems p {
-  font-style: italic;
-  font-weight: bold;
-  color: rgb(29, 105, 22);
+  background-color: #4db33488;
+  text-align: center;
 }
