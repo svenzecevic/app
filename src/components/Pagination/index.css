@@ -1,12 +1,30 @@
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #65587f;
-  padding: 0;
+.list-items {
+  display: inline-block;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
 }
 
-.list-items {
-  display: inline;
-  width: 100%;
+a:link {
+  text-decoration: none;
+  color: blue;
+  float: left;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  font-size: 20px;
+}
+
+.list-items a.active {
+  background-color: lightblue;
+  color: lightblue;
+  border-radius: 10px;
+}
+
+.list-items a:hover:not(.active) {
+  background-color: lightgray;
+}
+
+.center {
+  text-align: center;
 }

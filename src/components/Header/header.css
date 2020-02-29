@@ -3,7 +3,10 @@
   height: 400px;
   padding: 0;
   color: white;
-  background-color: #65587f;
+  background-image: url(../../img/beautiful-car-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
